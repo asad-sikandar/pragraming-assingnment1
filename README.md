@@ -59,23 +59,4 @@ int main() {
     cout << num2 << " cast to int: " << int2 << endl;
     
     return 0;
-}
-
-
-
-    // Explanation in comments:
-    /*
-    DIFFERENCE IN OUTPUTS EXPLANATION:
-    
-    1. PRECISION LOSS: When casting from double to int, the decimal part is truncated (not rounded).
-       Example: 5.789 becomes 5, 3.999 becomes 3
-    
-    2. INTEGER DIVISION: When dividing integers, the result is also an integer (decimal part truncated).
-       Example: 5 / 2 = 2 (not 2.5)
-    
-    3. NO DECIMAL PLACES: Integer results don't have decimal places, so formatting with setprecision(3) 
-       doesn't affect them.
-    
-    4. POTENTIAL DATA LOSS: Large floating point numbers might lose significant digits when cast to int.
-    */
-
+   }
