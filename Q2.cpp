@@ -27,7 +27,7 @@ int main()
     cout << "\n====== RESULTS ======" << endl;
     cout << "Total Obtained Marks: " << totalObtained << "/" << totalMaximum << endl;
     cout << "Percentage: " << percentage << "%" << endl;
-    
+    //using logic
     if(percentage >= 90) {
         cout << "Grade: A" << endl;
     }
