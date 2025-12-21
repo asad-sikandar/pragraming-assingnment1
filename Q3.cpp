@@ -35,7 +35,7 @@ int main() {
         cout << "\nLargest number: " << largest << endl;
         cout << "Smallest number: " << smallest << endl;
         cout << "\nEquality Check:" << endl;
-        
+        //comparing numbers
         if (firstNumber == secondNumber) {
             cout << " First (" << firstNumber << ") and Second (" << secondNumber << ") are equal" << endl;
         } else {
