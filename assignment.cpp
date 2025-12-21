@@ -54,7 +54,7 @@ int main() {
     cout << "Product: " << int1 * int2 << endl;
     int_zerodevision(int1,int2);
     
-    cout << "\n--- Casting Demonstration ---" << endl;
+    cout << "--- Casting Demonstration ---" << endl;
     cout << num1 << " cast to int: " << int1 << endl;
     cout << num2 << " cast to int: " << int2 << endl;
     
