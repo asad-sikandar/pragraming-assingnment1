@@ -1,61 +1,40 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
 int main()
 {
-    int physics, chemistry, biology, english, urdu;
-    cout << "Enter the number of Physics: ";
-    cin >> physics;
-    cout << "Enter the number of Chemistry: ";
-    cin >> chemistry;
-    cout << "Enter the number of Biology: ";
-    cin >> biology;
-    cout << "Enter the number of English: ";
-    cin >> english;
-    cout << "Enter the number of Urdu: ";
-    cin >> urdu;
-    cout << endl;
-    int totalmarks = 500;
-    float obtainmarks;
+    int a, b, c;
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+    cout << "Enter c: ";
+    cin >> c;
+    // Writing conditioning
+    if (a == b && a > c)
+    {
+        cout << "a and b are equal number and greater than c : "<< a << endl;
 
-    obtainmarks = physics + chemistry + biology + english + urdu;
-    float percentage = (static_cast<float> (obtainmarks) / totalmarks) * 100;
-
-    if (percentage >= 90 )
-    {
-        cout << " Grade "<< setw(15)<< "A" << endl;
     }
-    else if (percentage >= 80 )
+    else if (a == c && a > b)
     {
-        cout << " Grade "<< setw(15)<< "B" << endl;
+        cout << "a and c are equal number and greater than b : "<< c << endl;
     }
-    else if (percentage >= 70 )
+    else if (b == c &&  b > a)
     {
-        cout << " Grade "<<setw(15)<< "C" << endl;
+        cout << "b  and c are equal number and greater than a : "<< b << endl;
     }
-    else if (percentage >= 60 )
+    else if (a > b && a > c)
     {
-        cout << " Grade "<<setw(15)<< "D" << endl;
+        cout << "The greatest Number is a which is = "<< a << endl;
     }
-    else if (percentage >= 50)
+    else if (b > a && b > c)
     {
-        cout << " Grade "<<setw(15)<< "E" << endl;
+        cout << "The greatest Number is b which is  = "<< b << endl;
     }
-    else if (percentage > 50)
+    else
     {
-        cout << " Grade "<<setw(15)<< "F" << endl;
+    cout << "The greatest Number is c which is = "<< c << endl;
     }
-
-    cout << "__Detailed Marks Certificate__" << endl;
-    cout << setw(15)<< left << "Physics" <<physics << endl;
-    cout << setw(15) << left << "chemistry" << chemistry << endl;
-    cout << setw(15) << left << "biology" << biology<< endl;
-    cout << setw(15) << left << "english" << english << endl;
-    cout << setw(15) << left << "urdu" << urdu << endl;
-    cout << endl;
-    cout << setw(15) << left << "Obtained Marks" << obtainmarks << endl;
-    cout << setw(15) << left << "percentage" << percentage;
-    cout << endl;
     return 0;
 }
